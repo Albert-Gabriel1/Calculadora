@@ -14,11 +14,11 @@
         }
         #caixa{
             background-color: gray;
-            height: 59vh;
-            width: 50vw;
+            height: 80vh;
+            width: 55vw;
             margin: auto;
             display: flex;
-            flex-flow: column wrap;
+            flex-flow: column nowrap;
             align-items: center;
             justify-content: center;
             padding: 10px;
@@ -33,10 +33,10 @@
             text-shadow:3px 5px 8px #0b0f1ace;
         }
         #n1,#n2{
-            width: 97%;
+            width: 50%;
         }
         .botão{
-            width: 100%;
+            width: 50%;
             padding: 6px;
             background-color: #2563EB;
             color: #FFFFFF;
@@ -56,15 +56,16 @@
         #result{
             font-size: 1.2em;
         }
-        img{
+        #img1{
            width: 200px;
+           display: flex;
         }
     </style>
 </head>
 <body>
     <div id="container">
-        <img src="imagens/konata-dance.gif" alt="">
         <div id="caixa">
+            <img src="imagens/konata-dance.gif" alt="" id="img1">
             <h1>Calculadora</h1>
             <label for="n1">number 1</label>
             <input type="number" name="calculadora" id="n1" required> and
@@ -75,8 +76,8 @@
             <input type="button" value="x" class="botão" onclick="operador('x')">
             <input type="button" value="/" class="botão" onclick="operador('/')">
             <div id="result">Reultado</div>
+            <img src="imagens/konata-dance.gif" alt="" class="img">
         </div>
-            <img src="imagens/konata-dance.gif" alt="">
     </div>
     <script>
         function operador(op){
